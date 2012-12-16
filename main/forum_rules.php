@@ -9,4 +9,4 @@
 
 <p class="updated">Last updated 8:00am Dec 16, 2012 EDT</p>
 
-<?php include "includes/header.php" ?>
+<?php include "includes/footer.php" ?>
