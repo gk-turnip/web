@@ -53,9 +53,7 @@
 	<p>Each pod handles its own chat. We will then need a master chat server, but the load will be trivial.  If two players wish to chat and are in different pods, the two pods need to send the traffic between them.</p>
 
 	<h2>master database server:</h2>
-it will be a postgresql database holding user accounts and some basic user context.
-Most of the user context will be in the "pod" where the user resides.
-It was not my intent to architect this as distributed servers, but because the "pods" handle most of the load, it should not be necessary.
+	<p>It will be a postgresql database holding user accounts and some basic user context. Most of the user context will be in the "pod" where the user resides. It was not my intent to architect this as distributed servers, but because the "pods" handle most of the load, it should not be necessary.</p>
 
 	<h2>backup servers:</h2>
 	<p>Each pod is going to need to continuously stream out any context changes to a backup server. In the event of a total pod failure, a new virtual slice will need to be brought on-line and the most recent context will need to be sent from the backup server.  This can easily be as many as required.</p>
@@ -64,8 +62,8 @@ It was not my intent to architect this as distributed servers, but because the "
 	<p>each pod is going to need a monitor, each pod cannot monitor itself, but the pods can monitor each other. The load is not heavy, so we would not need separate servers for the monitors.
 there would need to be monitors on all the other servers as well as the pods.<p>
 
-	<h2>firewall/security/virtual servers:</h2>
-	<p>We are going to rely heavily on iptables, since each server is going to be directly connected to the internet.</p>
+	<h2>firewall/security:</h2>
+	<p>We are going to rely heavily on iptables (a Linux software firewall), since each server is going to be directly connected to the internet. Iptables will keep the databases within each pod outside the reach of the Internet.  All api ports on all servers will be locked down (via iptables) to the list of servers handling the entire game.  Since the programs will be open, this will hopefully keep out any "exploits" of our apis.</p>
 
 	<h2>program updates:</h2>
 	<p>All inner program api's need to be architected to be backwards compatible.  By that I mean that one "pod" on version 1.3 of the system must be able to communicate with the master database server at version 1.2 and another pod at version 1.1.  Obviously, once all servers are up to a certain version, we can eliminate any extra api code to handle the previous versions.</p>
