@@ -1,7 +1,7 @@
 <?php include "includes/header.php" ?>
 
-<h1>Game Servers Archtecture</h1>
-<p class="abstract">This document is based on a post by Raven about how our game should be archtected from the point of view of the various servers required.  Particularly how it will scale up to a huge game (assuming we ever get there) and how we can build in at least a little redundance.</p>
+<h1>Game Servers Architecture</h1>
+<p class="abstract">This document is based on a post by Raven about how our game should be architected from the point of view of the various servers required.  Particularly how it will scale up to a huge game (assuming we ever get there) and how we can build in at least a little redundance.</p>
 <h2>advantages of virtual servers:</h2>
 <p>Virtual servers off load a huge headache of having your own datacenter.  And in my opinion it will be a shade less expensive than having your own datacenter for the size of game we are building. Virtual servers also have the advantage of being able to get a new one on-line fairly quickly.   For example lets say we have one "pod" that is a stand by pod.  We would have to pay the monthly fee on that.  If one pod goes down, we can switch it to the new pod, we can then get another virtual slice on-line to be the new backup pod, we won't have to pay for the pod that went down next month, so we end up only paying for one extra pod.  In a physical computer setup we would have to have much more equipment, because the time delay to get the next redundant server on-line would be to go out and buy one.</p>
 
