@@ -7,7 +7,7 @@
     <li>get the web site to a resonable state</li>
     <li>get a "docs" to "web" link setup up such that the web site has links to all the documents in the "docs" repository</li>
     <li>create a test client 3d program to test out the 3d client technology.  We are thinking that we would not need more than 30 fps refresh on our client during a typlical "Gourdian Knot" view.  We don't know what the lower acceptable limit should be.  Also we are guessing that we need 6,000 moving triangles and 6,000 stationary triangles in a typical "Gourdian Knot" view. Once we have a test client program with 12,000 triangles we can get people to try it out on various systems, browsers and devices to see what frame rates will be like.</li>
-		<li>create a small demo game, details <a href="http://www.gourdianknot.com/game_starter.html">here</a>.</li>
+		<li>create a small demo game, details <a href="http://www.gourdianknot.com/game_starter.php">here</a>.</li>
   </ul>
 </p>
 
