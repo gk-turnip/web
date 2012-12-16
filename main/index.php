@@ -8,7 +8,7 @@
   <li><a href="game_design.php">Game Design Document</a></li>
   <li><a href="game_technical.php">Game Technical Document</a></li>
   <li><a href="game_starter.php">Starter Game Document</a></li>
-  <li><a href="servers.php">Game Servers Arcitecture</a></li>
+  <li><a href="servers.php">Game Servers Architecture</a></li>
   <li><a href="sysadmin.php">System Administration</a></li>
 </ul>
 
