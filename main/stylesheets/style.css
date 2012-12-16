@@ -69,7 +69,7 @@ header ul {
 }
 
 .arrow {
-  background-image: url(images/arrow.png);
+  background-image: url(/images/arrow.png);
   background-repeat: no-repeat;
   position: absolute;
   height: 10px;

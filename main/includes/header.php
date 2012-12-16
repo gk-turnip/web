@@ -9,7 +9,7 @@
 <body>
   <header>
     <a href="/"><span class="logo">Gourdian Knot</span></a>
-    <ul class="menu">
+    <!--<ul class="menu">
       <li class="menu-item dropdown">
         <a href="#">Ethos<span class="arrow">&nbsp;</span></a>
         <ul>
@@ -30,23 +30,8 @@
       <li class="menu-item">
         <a href="/forum">Forums</a>
       </li>
-    </ul>
+    </ul>-->
   </header>
 
   <div class="main">
     <div class="content">
-      <h1>Welcome to Gourdian Knot!</h1>
-      <ul>
-        <li><a href="mission_statement.html">Mission Statement</a></li>
-        <li>Try our new <a href="http://www.gourdianknot.com/forum">Forum</a> and please read our <a href="http://www.gourdianknot.com/forum_rules.html">Forum Rules</a></li>
-        <li><a href="project_management.html">Project Management</a></li>
-        <li><a href="game_design.html">Game Design Document</a></li>
-        <li><a href="game_technical.html">Game Technical Document</a></li>
-        <li><a href="game_starter.html">Starter Game Document</a></li>
-        <li><a href="servers.html">Game Servers Arcitecture</a></li>
-        <li><a href="sysadmin.html">System Administration</a></li>
-      </ul>
-    </div>
-  </div>
-</body>
-</html>
