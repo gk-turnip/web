@@ -2,6 +2,8 @@
 
 <h1>Page Title</h1>
 
+<p class="abstract">A summary of the document contents goes here</p>
+
  Content goes here, using <h2>'s for section headings.
 
 <p class="contributors">Anybody who contributed to the ideas that are present in this document should be listed here.</p>
