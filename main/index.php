@@ -11,5 +11,8 @@
   <li><a href="servers.php">Game Servers Architecture</a></li>
   <li><a href="sysadmin.php">System Administration</a></li>
 </ul>
+<div>
+<iframe style="border:2px solid rgba(0,0,0,0.06);border-left:none" src="http://gourdianknot.tumblr.com" width="500" height="500"></iframe>
+</div>
 
 <?php include "includes/footer.php" ?>
