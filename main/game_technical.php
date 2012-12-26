@@ -22,7 +22,7 @@
 <p>
   <ul>
     <li>HTML 5 with javascript</li>
-    <li>Ajax for communications between browser and server</li>
+    <li>websockets or Ajax for communications between browser and server</li>
     <li>use <a href="http://mrdoob.github.com/three.js">three.js</a> for 3d rendering</li>
     <li>target devices
       <ul>
