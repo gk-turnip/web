@@ -1,3 +1,5 @@
+<?php $pageTitle = 'Forum Rules' ?>
+
 <?php include "includes/header.php" ?>
 
 <h1>Gourdian Knot Forum Rules</h1>

@@ -1,3 +1,5 @@
+<?php $pageTitle = 'Game Servers Architecture' ?>
+
 <?php include "includes/header.php" ?>
 
 <h1>Game Servers Architecture</h1>

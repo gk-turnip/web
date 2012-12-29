@@ -1,3 +1,5 @@
+<?php $pageTitle = 'System Administration' ?>
+
 <?php include "includes/header.php" ?>
 
 <h1>System Administration</h1>
