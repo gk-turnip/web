@@ -1,3 +1,5 @@
+<?php $pageTitle = 'Starter Game Document' ?>
+
 <?php include "includes/header.php" ?>
 
 <h1>Starter Game Document</h1>
