@@ -25,7 +25,9 @@
         title = blog.posts[i]["regular-title"];
         url = blog.posts[i].url;
         content = blog.posts[i]["regular-body"];
-        postHtml += '<h2><a href="'+ url +'">' + title + '</a></h2>' + content;
+		timeStamp = new Date(0);
+		timeStamp.setUTCSeconds(blog.posts[i]["unix-timestamp"]);
+        postHtml += '<h2><a href="'+ url +'">' + title + '</a></h2>' + content + "&nbsp;&nbsp;" + timeStamp;
       }
     }
     postContainer.innerHTML = postHtml;
