@@ -1,3 +1,5 @@
+<?php $pageTitle = 'Project Management' ?>
+
 <?php include "includes/header.php" ?>
 
 <h1>Project Management</h1>

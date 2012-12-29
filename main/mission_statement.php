@@ -1,3 +1,5 @@
+<?php $pageTitle = 'Mission Statement' ?>
+
 <?php include "includes/header.php" ?>
 
 <h1>Mission Statement</h1>

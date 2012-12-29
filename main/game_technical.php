@@ -1,3 +1,5 @@
+<?php $pageTitle = 'Technical Document' ?>
+
 <?php include "includes/header.php" ?>
 
 <h1>Technical Document</h1>
