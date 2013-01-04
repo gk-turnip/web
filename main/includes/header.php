@@ -11,7 +11,7 @@
     <a href="/"><span class="logo">Gourdian Knot</span></a>
     <ul class="menu">
       <li class="menu-item">
-        <a href="/documents.php">Documents</a>
+        <a href="/main/documents.php">Documents</a>
       </li>
       <li class="menu-item">
         <a href="/forum">Forums</a>
