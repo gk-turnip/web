@@ -2,6 +2,8 @@
 
 <?php include "includes/header.php" ?>
 
+<div class="about">What is Gourdian Knot? It is a community-based, community-built, cooperative offbeat fantasy MMO.  We are still in the very early stages so have a look around, join the forum, add your suggestions, help set the direction of Gourdian Knot.</div>
+
 <div id="blog-posts">Getting latest blog posts…</div>
 
 <script type="text/javascript" src='http://gourdianknot.tumblr.com/api/read/json?num=5'></script>
