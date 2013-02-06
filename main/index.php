@@ -39,4 +39,8 @@
   }
 </script>
 
+<div>
+<br/>
+contact:<br/><img src="http://gourdianknot.com/main/e.png"/>
+</div>
 <?php include "includes/footer.php" ?>
