@@ -13,5 +13,6 @@
   <li><a href="game_starter.php">Starter Game Document</a></li>
   <li><a href="servers.php">Game Servers Architecture</a></li>
   <li><a href="sysadmin.php">System Administration</a></li>
+  <li><a href="game_build.php">Game Build Instructions</a></li>
   <li><a href="game_to_do.php">Short Term Development To Do</a></li>
 </ul>
