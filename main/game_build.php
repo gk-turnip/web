@@ -3,6 +3,7 @@
 <?php include "includes/header.php" ?>
 
 <h1>Game Build Instructions</h1>
+<h4>updated Feb 9, 2012</h4>
 <p>
 This is a technical document on building the game from source, preliminary draft and somewhat cryptic.  It assumes the game is being built on Linux, it should be possible to build it on other platforms, but I don't have instructions for them yet.
 </p>
@@ -15,6 +16,10 @@ This is a technical document on building the game from source, preliminary draft
 <br/>
 
 <pre>
+# this installations assumes that the home directory is /home/gk
+# change /home/gk to your own home directory if it is different
+# this script also assumes a "gk" user in the "gk" group
+
 # first install some required pieces
 
 sudo apt-get install postgresql
@@ -61,15 +66,15 @@ tar xvf /home/gk/Downloads/go1.0.3.linux-amd64.tar.gz
 cd /home/gk
 vi .bashrc
 # add:
-export GOROOT=/home/gk/go
+export GOROOT=$HOME/go
+export GOBASE=$HOME/server/go
+export GOPATH="$HOME/server/go/gk:$HOME/server/go/pq"
 export PATH=$PATH:$GOROOT/bin
 
 # exit vi
 
-
-# set GOROOT and PATH, won't be required on subsequent login to shell
-export GOROOT=/home/gk/go
-export PATH=$PATH:$GOROOT/bin
+# either set these new environment variables in the current shell
+# or open a new shell to get the environment variables set
 
 # test with:
 go version
@@ -78,18 +83,6 @@ go version
 # get a copy of the server code from github
 cd /home/gk
 git clone https://github.com/gk-turnip/server.git
-
-cd /home/gk
-vi .bashrc
-# add some environment variables for building go code for gourdian knot:
-export GOBASE=/home/gk/server/go
-export GOPATH="/home/gk/server/go/gk:/home/gk/server/go/pq"
-
-# exit vi
-
-# set GOBASE and GOPATH, won't be required on subsequent logins
-export GOBASE=/home/gk/server/go
-export GOPATH="/home/gk/server/go/gk:/home/gk/server/go/pq"
 
 # install the websocket libraries from google
 go get code.google.com/p/go.net/websocket
@@ -136,6 +129,7 @@ cd /home/gk/loginServer/config
 &lt;/config&gt;
 
 # startup the login server:
+# it can be stared with "nohup" or create a /etc/init.d/gameServer startup script
 /home/gk/server/go/gk/bin/loginServerMain -config /home/gk/loginServer/config/config.xml
 
 # while the login server is running, this should connect from the browser:
@@ -153,6 +147,7 @@ cd /home/gk/gameServer/config
         &lt;svgDir&gt;/home/gk/assets/game/svg&lt;/svgDir&gt;
         &lt;webAddressPrefix&gt;http://localhost&lt;/webAddressPrefix&gt;
         &lt;websocketAddressPrefix&gt;ws://localhost:14003&lt;/websocketAddressPrefix&gt;
+        &lt;audioAddressPrefix&gt;ws://localhost&lt;/websocketAddressPrefix&gt;
         &lt;databaseHost&gt;localhost&lt;/databaseHost&gt;
         &lt;databasePort&gt;5432&lt;/databasePort&gt;
         &lt;databaseUserName&gt;gk&lt;/databaseUserName&gt;
@@ -160,8 +155,13 @@ cd /home/gk/gameServer/config
         &lt;databaseDatabase&gt;gk&lt;/databaseDatabase&gt;
 &lt;/config&gt;
 
-# startup the game server:
+# startup the game server (this is a server process that keeps running)
+# it can be stared with "nohup" or create a /etc/init.d/loginServer startup script
 /home/gk/server/go/gk/bin/gameServerMain -config /home/gk/gameServer/config/config.xml
+
+# get the game assets
+cd /home/gk
+git clone https://github.com/gk-turnip/assets.git
 
 # setup the directories that are served by apache2
 sudo mkdir /var/www/assets
@@ -172,18 +172,20 @@ sudo chown gk.gk /var/www/assets/gk
 # copy the server files to where they are visible by apache2
 cp -r server/stylesheets /var/www/assets/gk
 cp -r server/javascript /var/www/assets/gk
-cp -r server/audio /var/www/assets/gk
-
-# get the game assets
-cd /home/gk
-git clone https://github.com/gk-turnip/assets.git
+cp -r /home/gk/assets/game/audio /var/www/assets/gk
 
 # now the login server and game server should work
 # http://localhost:14001/gk/loginServer
 # http://localhost:14002/gk/gameServer
 
 # note, you can currently get directly to the game server,
+# browse to it directly without logging in,
 # but in the future it will require the login server.
+
+# if a new version is "pulled" from github,
+# or if changes are made to anything
+# another copy to /var/www/assets/gk will need to be done
+# and the login and game servers will need to be restarted
 
 </pre>
 
