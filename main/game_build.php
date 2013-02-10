@@ -153,6 +153,7 @@ cd /home/gk/gameServer/config
         &lt;databaseUserName&gt;gk&lt;/databaseUserName&gt;
         &lt;databasePassword&gt;PASSWORD&lt;/databasePassword&gt;
         &lt;databaseDatabase&gt;gk&lt;/databaseDatabase&gt;
+        &lt;websocketPath&gt;/gkws&lt;/websocketPath&gt;
 &lt;/config&gt;
 
 # startup the game server (this is a server process that keeps running)
