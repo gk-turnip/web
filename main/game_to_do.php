@@ -16,7 +16,6 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <li>draw large diamond iso from svg</li>
 <li>background sound does not loop</li>
 <li>add copyright text to all javascript</li>
-<li>create a set of game build instructions</li>
 <li>check if rain causes lag, put rain and avatar movement in same loop</li>
 <li>select "--select avatar--" causes problem, avatar disapears</li>
 <li>look into requirejs</li>
