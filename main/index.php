@@ -5,7 +5,7 @@
 <div class="about">What is Gourdian Knot? It is a community-based, community-built, cooperative offbeat fantasy MMO.  We are still in the very early stages so have a look around, join the forum, add your suggestions, help set the direction of Gourdian Knot.</div>
 <br/>
 <div class="about">
-Link to the <a href="https://gourdianknot.com/gk/loginServer">Game Server</a>.
+Link to the <a href="https://www.gourdianknot.com/gk/loginServer">Game Server</a>.
 </div>
 
 <div id="blog-posts">Getting latest blog posts…</div>

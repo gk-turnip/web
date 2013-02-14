@@ -19,6 +19,7 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <li>check if rain causes lag, put rain and avatar movement in same loop</li>
 <li>select "--select avatar--" causes problem, avatar disapears</li>
 <li>look into requirejs</li>
+<li>look into wss:// instead of ws:// for websockets</li>
 </ul>
 
 <?php include "includes/footer.php" ?>
