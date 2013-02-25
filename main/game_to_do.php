@@ -14,17 +14,15 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <li>look into requirejs</li>
 <li>look into issue tracking system (bugzilla http://www.bugzilla.org,mantis http://www.mantisbt.org)</li>
 <li>add "chat" within the game server</li>
-<li>refactor &lt;g&gt; svg layer system</li>
 <li>update the build documentation, wws, new config.xml stuff</li>
 <li>refactor the use of c_rand and m_rand into gkrand package</li>
 <li>current list of bugs:</li>
 <li><ul>
-<li>background sound does not loop</li>
-<li>The dandelion layer is still placing some dandelions on avatars instead of on the ground.</li>
 <li>When you change avatars, the avatar still moves back to home position instead of remaining where it was when you clicked to change.</li>
 <li>When you move your avatar, it still repositions instantly in other windows, rather than progressing to the new position.</li>
 <li>There are still dandelions periodically showing up with black foliage instead of green.</li>
 <li>Avatars still sometimes switch to black and white in Chrome and Chromium.</li>
+<li>if you switch the avatar enough times, the game will stop responding</li>
 </ul></li>
 
 </ul>
