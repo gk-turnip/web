@@ -19,9 +19,8 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <li>current list of bugs:</li>
 <li><ul>
 <li>When you change avatars, the avatar still moves back to home position instead of remaining where it was when you clicked to change.</li>
-<li>When you move your avatar, it still repositions instantly in other windows, rather than progressing to the new position.</li>
 <li>There are still dandelions periodically showing up with black foliage instead of green.</li>
-<li>Avatars still sometimes switch to black and white in Chrome and Chromium.</li>
+<li>Avatars still sometimes switch to black and white in Chrome and Chromium. create a test that does much higher rate if switch in/out of the dandelion, change dandelion colouring to determine what is causing this.</li>
 <li>if you switch the avatar enough times, the game will stop responding</li>
 </ul></li>
 
