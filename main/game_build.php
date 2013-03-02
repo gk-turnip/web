@@ -119,6 +119,7 @@ cd /home/gk/loginServer/config
         &lt;templateDir&gt;/home/gk/server/templates/login&lt;/templateDir&gt;
         &lt;loginWebAddressPrefix&gt;http://localhost:14001&lt;/loginWebAddressPrefix&gt;
         &lt;gameWebAddressPrefix&gt;http://localhost:14002&lt;/gameWebAddressPrefix&gt;
+        &lt;gameTokenAddressPrefix&gt;http://localhost:14004&lt;/gameTokenAddressPrefix&gt;
         &lt;databaseHost&gt;localhost&lt;/databaseHost&gt;
         &lt;databasePort&gt;5432&lt;/databasePort&gt;
         &lt;databaseUserName&gt;gk&lt;/databaseUserName&gt;
@@ -142,19 +143,25 @@ cd /home/gk/gameServer/config
 &lt;config&gt;
         &lt;httpPort&gt;14002&lt;/httpPort&gt;
         &lt;websocketPort&gt;14003&lt;/websocketPort&gt;
+        &lt;tokenPort&gt;14004&lt;/tokenPort&gt;
         &lt;logDir&gt;/home/gk/gameServer/logs&lt;/logDir&gt;
         &lt;templateDir&gt;/home/gk/server/templates/game&lt;/templateDir&gt;
         &lt;svgDir&gt;/home/gk/assets/game/svg&lt;/svgDir&gt;
         &lt;webAddressPrefix&gt;http://localhost&lt;/webAddressPrefix&gt;
-        &lt;websocketAddressPrefix&gt;ws://localhost:14003&lt;/websocketAddressPrefix&gt;
-        &lt;audioAddressPrefix&gt;ws://localhost&lt;/websocketAddressPrefix&gt;
+        &lt;websocketAddressPrefix&gt;wss://localhost:14003&lt;/websocketAddressPrefix&gt;
+        &lt;audioAddressPrefix&gt;http://localhost&lt;/websocketAddressPrefix&gt;
         &lt;databaseHost&gt;localhost&lt;/databaseHost&gt;
         &lt;databasePort&gt;5432&lt;/databasePort&gt;
         &lt;databaseUserName&gt;gk&lt;/databaseUserName&gt;
         &lt;databasePassword&gt;PASSWORD&lt;/databasePassword&gt;
         &lt;databaseDatabase&gt;gk&lt;/databaseDatabase&gt;
         &lt;websocketPath&gt;/gkws&lt;/websocketPath&gt;
+        &lt;certificatePath&gt;/etc/ssl/certs/myCert.pem&lt;/certificatePath&gt;
+        &lt;privateKeyPath&gt;/etc/ssl/private/myKey.pem&lt;/privateKeyPath&gt;
 &lt;/config&gt;
+
+# note that if the ssl certificate and key are blank
+# the game will work, but the websocket must be ws:// not wss://
 
 # startup the game server (this is a server process that keeps running)
 # it can be stared with "nohup" or create a /etc/init.d/loginServer startup script
