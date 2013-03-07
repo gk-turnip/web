@@ -10,6 +10,9 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <ul>
 <li>check if rain causes lag, put rain and avatar movement in same loop</li>
 <li>look into requirejs</li>
+<li>fix the rain sound</li>
+<li>test lag between large and small avatar files</li>
+<li>align the avatars with origin_x and origin_y</li>
 <li>look into issue tracking system (bugzilla http://www.bugzilla.org,mantis http://www.mantisbt.org)</li>
 <li>current list of bugs:</li>
 <li><ul>
