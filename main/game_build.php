@@ -146,7 +146,8 @@ cd /home/gk/gameServer/config
         &lt;tokenPort&gt;14004&lt;/tokenPort&gt;
         &lt;logDir&gt;/home/gk/gameServer/logs&lt;/logDir&gt;
         &lt;templateDir&gt;/home/gk/server/templates/game&lt;/templateDir&gt;
-        &lt;svgDir&gt;/home/gk/assets/game/svg&lt;/svgDir&gt;
+        &lt;avatarSvgDir&gt;/home/gk/assets/game/svg/avatar&lt;/avatarSvgDir&gt;
+        &lt;terrainSvgDir&gt;/home/gk/assets/game/svg/terrain&lt;/terrainSvgDir&gt;
         &lt;webAddressPrefix&gt;http://localhost&lt;/webAddressPrefix&gt;
         &lt;websocketAddressPrefix&gt;wss://localhost:14003&lt;/websocketAddressPrefix&gt;
         &lt;audioAddressPrefix&gt;http://localhost&lt;/websocketAddressPrefix&gt;
