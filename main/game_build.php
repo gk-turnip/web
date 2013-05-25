@@ -1,4 +1,4 @@
-<?php $pageTitle = 'Game To Do' ?>
+<?php $pageTitle = 'Game Build Instructions' ?>
 
 <?php include "includes/header.php" ?>
 
