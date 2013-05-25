@@ -3,7 +3,6 @@
 <?php include "includes/header.php" ?>
 
 <h1>Game Build Instructions</h1>
-<h4>updated Feb 9, 2012</h4>
 <p>
 This is a technical document on building the game from source, preliminary draft and somewhat cryptic.  It assumes the game is being built on Linux, it should be possible to build it on other platforms, but I don't have instructions for them yet.
 </p>
@@ -198,4 +197,7 @@ cp -r /home/gk/assets/game/audio /var/www/assets/gk
 
 </pre>
 
+<p class="updated">Last updated May 2013</p>
+
 <?php include "includes/footer.php" ?>
+

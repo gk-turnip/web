@@ -24,8 +24,7 @@
 <p>
   <ul>
     <li>HTML 5 with javascript</li>
-    <li>websockets or Ajax for communications between browser and server</li>
-    <li>use <a href="http://mrdoob.github.com/three.js">three.js</a> for 3d rendering</li>
+    <li>secure websockets for communications between browser and server</li>
     <li>target devices
       <ul>
         <li>desktop browsers (firefox, chrome, etc.)</li>
@@ -33,12 +32,8 @@
         <li>hopefully html5 / javascript will be up to the task so we won't need specific client side programs</li>
       </ul>
     </li>
-    <li>what will the art format be?</li>
-    <li>what will the sound format be?
-      <ul>
-        <li>my initial toughts are <a href="http://en.wikipedia.org/wiki/Ogg">Ogg Vorbis</a> audio format</li>
-      </ul>
-    </li>
+	<li>sound is release in both ogg and mp3</li>
+	<li>art is in svg</li>
     <li>how many avatars will the client side handle at once in detail game view?
       <ul>
         <li>this has to be limited for two reasons:
@@ -51,7 +46,7 @@
     </li>
   </ul>
 </p>
-<p class="contributors"></p>
-<p class="updated"></p>
+<p class="contributors">Turnip</p>
+<p class="updated">Last updated May 2013</p>
 
 <?php include "includes/footer.php" ?>

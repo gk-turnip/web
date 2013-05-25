@@ -3,7 +3,8 @@
 <?php include "includes/header.php" ?>
 
 <h1>Gourdian Knot Forum Rules</h1>
-<p>Once this gets more users, we will be implementing some "anti-spam" settings. For example, in the future any "first time" posts will probably be configured to be either delayed or approved.</p>
+<p>We had to implement "anti-spam" settings, so your first post needs to be approved.  We were getting quite a bit of "forum spam".</p>
+<p>I reserve the right to remove any account that is "stale", that is no login activity for a long time (probably over a year).  Especially accounts that have been created and have only a single login at the time of the account's creation, this is almost always spam accounts.</p>
 <h2>phpBB3 rules</h2>
 <p>Our forums are powered by phpBB (hereinafter &quot;they&quot;, &quot;them&quot;, &quot;their&quot;, &quot;phpBB software&quot;, &quot;www.phpbb.com&quot;, &quot;phpBB Group&quot;, &quot;phpBB Teams&quot;) which is a bulletin board solution released under the &quot;General Public License&quot; and can be downloaded from www.phpbb.com. The phpBB software only facilitates internet based discussions; the phpBB Group are not responsible for what we allow and/or disallow as permissible content and/or conduct. For further information about phpBB, please see: http://www.phpbb.com/.</p>
 
