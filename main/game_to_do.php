@@ -8,10 +8,7 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <p>Turnip</p>
 <br/>
 <ul>
-<li></li>
-<li>create "walls" around objects so you cannot walk through rocks</li>
-<li>remove extra objects from pod</li>
-<li></li>
+<li>fix up chat escape: ~, ", and html in submitted chat, chat from other users, and chat history</li>
 <li>look into issue tracking system (bugzilla http://www.bugzilla.org,mantis http://www.mantisbt.org)</li>
 <li>fix the rain sound</li>
 <li>fix the rain</li>

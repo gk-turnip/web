@@ -25,7 +25,7 @@ sudo apt-get install postgresql
 sudo apt-get install apache2
 
 # download go from http://code.google.com/p/go/downloads/list
-# pick go1.0.3-linux-amd64.tar.gz for 64 bit linux
+# pick go1.1.linux-amd64.tar.gz for 64 bit linux
 
 # configure postgres,
 # note there are two passwords
@@ -59,7 +59,7 @@ psql gk gk
 
 # install go
 cd /home/gk
-tar xvf /home/gk/Downloads/go1.0.3.linux-amd64.tar.gz 
+tar xvf /home/gk/Downloads/go1.1.linux-amd64.tar.gz 
 
 # add some environment variables for go
 cd /home/gk
@@ -77,14 +77,16 @@ export PATH=$PATH:$GOROOT/bin
 
 # test with:
 go version
-# it should say "go version go1.0.3"
+# it should say "go version go1.1 linux/amd64"
 
 # get a copy of the server code from github
 cd /home/gk
 git clone https://github.com/gk-turnip/server.git
 
 # install the websocket libraries from google
-go get code.google.com/p/go.net/websocket
+#this should not be required anymore,
+#since a copy is now in the repository
+#go get code.google.com/p/go.net/websocket
 
 # build the go code
 # it should say that the tests passed
