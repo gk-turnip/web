@@ -8,6 +8,8 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <p>Turnip</p>
 <br/>
 <ul>
+<li>do all the fieldContext elements need mutex?</li>
+<li>capture and log panic so nohup.out never has error messages</li>
 <li>fix up chat escape: ~, ", and html in submitted chat, chat from other users, and chat history</li>
 <li>look into issue tracking system (bugzilla http://www.bugzilla.org,mantis http://www.mantisbt.org)</li>
 <li>fix the rain sound</li>

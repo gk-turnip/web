@@ -96,8 +96,10 @@ cd /home/gk/server/go
 # the directory /home/gk/server/go/gk/bin should now hold gameServerMain and loginServerMain programs.
 
 # create the tables:
+# needs to be run for every n_update.sql in order
 psql gk gk
 \i /home/gk/server/sql/001_update.sql
+\i /home/gk/server/sql/002_update.sql
 \q
 
 # make the game server and login server directories
