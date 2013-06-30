@@ -14,9 +14,6 @@
         <a href="/main/documents.php">Documents</a>
       </li>
       <li class="menu-item">
-        <a href="/main/glitch_links.php">Glitch Links</a>
-      </li>
-      <li class="menu-item">
         <a href="/forum">Forums</a>
       </li>
     </ul>
