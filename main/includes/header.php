@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <a href="/"><span class="logo">Gourdian Knot</span></a>
+    <a href="/"><span class="logoDiv"><img class="logoImage" src="/main/images/logo.png"/><span class="logoTitle">Gourdian Knot</span></span></a>
     <ul class="menu">
       <li class="menu-item">
         <a href="/main/documents.php">Documents</a>
