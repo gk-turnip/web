@@ -18,6 +18,7 @@ This is a breif short term to do list, mostly for myself to keep track of what I
 <li>switch right/left as avatar moves</li>
 <li>When you change avatars, the avatar still moves back to home position instead of remaining where it was when you clicked to change.</li>
 <li>possible different web socket library: https://github.com/garyburd/go-websocket</li>
+<li>possible different pgsql library:  https://github.com/lib/pq</li>
 </ul>
 
 <?php include "includes/footer.php" ?>
